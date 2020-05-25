@@ -1,5 +1,9 @@
 import discord, random
 from discord.ext import commands
+from discord.ext.commands import Bot
+import asyncio
+import time
+import os
 client=commands.Bot(command_prefix='/')
 client.remove_command("help") 
 @client.event
@@ -404,4 +408,4 @@ async def warn_error(ctx, error):
         embed.description='You are not allowed to use this command! :x:'
         embed.set_image(url='https://images-ext-2.discordapp.net/external/kKeLfD1QibiNsOLlWIyp8UX6sbfHwdaZUJDu_rcCh5w/https/media.discordapp.net/attachments/706326604464259082/706326833494360194/linea.gif')                      
         await ctx.send(embed=embed)
-client.run('TOKEN')
+client.run(os.gevenv('TOKEN'))
