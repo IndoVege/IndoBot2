@@ -404,4 +404,4 @@ async def warn_error(ctx, error):
         embed.description='You are not allowed to use this command! :x:'
         embed.set_image(url='https://images-ext-2.discordapp.net/external/kKeLfD1QibiNsOLlWIyp8UX6sbfHwdaZUJDu_rcCh5w/https/media.discordapp.net/attachments/706326604464259082/706326833494360194/linea.gif')                      
         await ctx.send(embed=embed)
-client.run('NzExMzUzNzEwOTczODEyNzY5.XsFQIg._TQ0HFXcLZtBIF1egbfnkuLELrA')
+client.run('TOKEN')
